@@ -53,22 +53,22 @@
   //creating continous balloons
   var select_balloon = Math.round(random(1,1));
     
-  if (World.frameCount % 100 == 0) {
+  if (World.frameCount % 180 == 0) {
   if(select_balloon == 1) {
   redBalloon();
   }
   }    
-  if(World.frameCount % 100 == 0){
+  if(World.frameCount % 160 == 0){
   if(select_balloon == 1){
   blueBalloon()
   }
   }
-  if(World.frameCount % 100 == 0){
+  if(World.frameCount % 120 == 0){
   if(select_balloon == 1){
   pinkBalloon()
   }
   }
-  if(World.frameCount % 100 == 0){
+  if(World.frameCount % 140 == 0){
   if(select_balloon == 1){
   greenBalloon()
   }

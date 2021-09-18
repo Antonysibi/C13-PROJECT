@@ -1,6 +1,5 @@
   var bow , arrow,  background;
   var bowImage, arrowImage, green_balloonImage, red_balloonImage, pink_balloonImage ,blue_balloonImage, backgroundImage;
-  var score 
 
   function preload(){     
   //loading images and animations 
@@ -39,7 +38,7 @@
   // moving ground
   scene.velocityX = -3 
   if (scene.x < 0){
-  scene.x = scene.width/2;
+    scene.x = scene.width/2;
   }
 
   //moving bow
@@ -47,34 +46,33 @@
     
   // release arrow when space key is pressed
   if (keyDown("space")) {
-  createArrow();
+    createArrow();
   }
 
   //creating continous balloons
   var select_balloon = Math.round(random(1,4));
     
   if (World.frameCount % 180 == 0) {
-  if(select_balloon == 1) {
-  redBalloon();
-  }
+    if(select_balloon == 1) {
+      redBalloon();
+    }
   }    
   if(World.frameCount % 160 == 0){
-  if(select_balloon == 1){
-  blueBalloon()
-  }
+    if(select_balloon == 1){
+      blueBalloon()
+    }
   }
   if(World.frameCount % 120 == 0){
-  if(select_balloon == 1){
-  pinkBalloon()
-  }
+    if(select_balloon == 1){
+      pinkBalloon()
+    }
   }
   if(World.frameCount % 140 == 0){
-  if(select_balloon == 1){
-  greenBalloon()
-  }
+    if(select_balloon == 1){
+      greenBalloon()
+    }
   }
 
-  score = score + 1
 
   drawSprites();
 
